@@ -1,0 +1,117 @@
+You are building a production-ready, multi-page React website for a real
+hospital client: "Oorja Gastro-Liver and Fetal Medicine Centre." This is a
+redesign of an existing single-page template site — keep ALL content
+identical to what's provided, but rebuild the structure, visual design, and
+interactions from scratch to feel premium, modern, and classic (boutique
+private-hospital brand, not a generic template).
+
+Three reference files are provided alongside this prompt — read and follow
+them exactly:
+- masterplan.md — site map, tech stack, folder structure, component list
+- design.md — color palette, typography, spacing, animation spec, hover spec
+- content.txt — the exact copy for every page (do not invent, add, or remove
+  any service, credential, testimonial, or contact detail)
+
+=== TECH STACK (required) ===
+- React 18 + Vite
+- React Router v6 (real multi-page routing, not anchor links)
+- Tailwind CSS 3 (configure custom theme tokens from design.md — colors,
+  fonts, spacing — in tailwind.config.js, do not hardcode hex values inline
+  everywhere)
+- Framer Motion for all animation (scroll reveals, hover states, page
+  transitions, count-up numbers)
+- Lenis (or equivalent) for smooth/inertia scrolling across the whole app
+- lucide-react for icons
+- Google Fonts: a serif display font (Fraunces or Playfair Display) for
+  headings + a clean sans (Inter or General Sans) for body/UI
+
+=== PAGES TO BUILD (React Router routes) ===
+1. `/` Home
+2. `/about` About
+3. `/services` Services hub (links to the two speciality pages)
+4. `/services/gastroenterology` Gastroenterology Services
+5. `/services/fetal-medicine` Fetal Medicine Services
+6. `/team` Our Team
+7. `/why-oorja` Why Oorja
+8. `/testimonials` Testimonials
+9. `/contact` Contact
+
+Persistent Navbar (active-link highlighting, mobile hamburger menu with
+slide/fade animation) and Footer on every page, per masterplan.md's
+component inventory.
+
+=== DESIGN REQUIREMENTS ===
+Implement the full design system in design.md exactly:
+- Color palette (navy base, teal for Gastro-Liver sections, rose for Fetal
+  Medicine sections, gold hairline accents, cream background — not stark
+  white)
+- Typography scale and pairing (serif headings, sans body, small-caps
+  letter-spaced eyebrow labels above section headings)
+- Section rhythm: alternate cream / white / tinted backgrounds as the user
+  scrolls down each page
+- Rounded imagery (12–20px radius), duotone-to-color hover reveal on photos
+- Bento-style grid for the Why Oorja page (not a flat uniform grid — mix tile
+  sizes for visual hierarchy)
+
+=== ANIMATION REQUIREMENTS (this is the centerpiece — make it feel premium) ===
+1. Global smooth scroll wrapper (Lenis) with weighted, non-default easing.
+2. Every section reveals with a fade-up + stagger pattern on scroll
+   (Framer Motion `whileInView`, `once: true`) — cards/list items animate in
+   sequence, not all at once.
+3. Hero and section background shapes have subtle parallax drift on scroll.
+4. Stat/number elements (if used) count up from 0 when scrolled into view.
+5. On the two Services pages: sticky section heading that stays pinned while
+   the service card grid scrolls past it on desktop (collapses to normal
+   stacked layout on mobile).
+6. Route changes animate with a fade + slight vertical shift using
+   `AnimatePresence` — no jarring hard page cuts.
+7. A thin scroll-progress bar fixed to the top of the viewport.
+8. Full `prefers-reduced-motion` support — every animation must have a
+   reduced/instant fallback, this is not optional.
+
+=== HOVER EFFECTS (required, not generic Tailwind hover:scale-105 everywhere) ===
+- Primary CTA buttons: color shift + slight magnetic pointer-follow effect
+  within a small radius.
+- Nav links: gold underline draws left-to-right on hover.
+- Service/Why-Oorja cards: lift + deepening shadow + border color shift to
+  the section's accent color (teal or rose) + icon micro-animation.
+- Doctor cards: image overlay slides up on hover revealing a label.
+- Testimonial cards: background tint and quote-mark icon respond subtly on
+  hover.
+- Footer links: color shift + small rightward nudge.
+
+=== CONTENT RULES ===
+- Use content.txt verbatim for all copy: services, doctor names and
+  qualifications, testimonials (name + quote), address, phone, email, social
+  links, footer link lists.
+- Do not invent new services, doctors, statistics, awards, or testimonials.
+- Reuse the same image filenames referenced in content.txt (logo.png,
+  carousel-1.jpg, about-1.jpg, service-1.jpg through service-13.jpg,
+  doctor-1.jpg, doctor-2.jpg) — treat them as placeholders to be dropped into
+  `src/assets/` by the client; use appropriately sized placeholder/fallback
+  images in the meantime so the layout renders correctly.
+- The "Book Appointment" CTA always links to the WhatsApp number in
+  content.txt.
+- Do not fabricate a YouTube video URL for the Why Oorja section — omit that
+  slot or leave a clearly marked placeholder if no real link is supplied.
+
+=== FOLDER STRUCTURE ===
+Follow the exact structure in masterplan.md section 7 (`src/components/layout`,
+`src/components/ui`, `src/pages`, `src/data/content.js`, etc.). Centralize all
+copy from content.txt into `src/data/content.js` as exported JS objects/arrays
+so pages import data rather than hardcoding strings inline.
+
+=== DELIVERABLE ===
+A working Vite project with:
+- `package.json` with all dependencies listed above
+- `tailwind.config.js` with the custom theme from design.md
+- Fully wired routing, navbar, footer
+- All 9 pages built with real content and the animation/hover behavior
+  specified above
+- Responsive at mobile (375px), tablet (768px), and desktop (1280px+)
+  breakpoints
+- Clean, componentized, readable code — no single giant page file
+
+Build it page by page, starting with the shared layout (Navbar/Footer/
+PageTransition/ScrollProgressBar) and design tokens, then Home, then the
+remaining inner pages.

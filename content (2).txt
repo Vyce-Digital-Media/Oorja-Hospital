@@ -1,0 +1,261 @@
+OORJA GASTRO-LIVER AND FETAL MEDICINE CENTRE — SITE CONTENT
+(Source: oorjahospital.com — content unchanged, only reorganized by page)
+
+============================================================
+GLOBAL / HEADER
+============================================================
+Brand name: Oorja Gastro-Liver and Fetal Medicine Centre
+Tagline (footer): Integrating Science, Energy and Life
+
+Contact (used in header + footer + Contact page):
+- Address: Plot No-1, M.J.Park Society, Nr. DRB College, New City Light Rd,
+  Surat, Gujarat 395007
+- Phone: +91 87807 61808
+- Email: oorjagfmc@gmail.com
+- Find Us (map link): https://maps.app.goo.gl/Q9qjTD8tYFkaVp2E7
+- WhatsApp booking link: https://wa.me/918780761808
+
+Social links:
+- Facebook: https://www.facebook.com/oorjagfmc/
+- Instagram: https://www.instagram.com/oorjagfmc/
+- LinkedIn: https://www.linkedin.com/company/oorja-gastro-liver-and-fetal-medicine-centre/
+
+Primary nav items (now real routes instead of anchors):
+Home | About | Services (Gastroenterology / Fetal Medicine) | Our Team |
+Why Oorja? | Testimonials | Contact
+
+Primary CTA button: "Book Appointment" → WhatsApp link above
+
+============================================================
+PAGE: HOME
+============================================================
+Hero eyebrow: What We Do
+Hero heading: Advanced Centre of Gastroenterology, Hepatology & Maternal-Fetal
+Medicine
+Hero subtext: Expert care for your digestive, liver and pregnancy needs
+delivered with precision, compassion and modern medical excellence.
+Hero CTA: Book Appointment
+
+(Home page reuses shortened teasers of Services, Why Oorja, Team and
+Testimonials sections below, each linking through to its full page.)
+
+============================================================
+PAGE: SERVICES — GASTROENTEROLOGY
+============================================================
+Section title: Gastroenterology Services
+
+1. Digestive issues
+   Diagnosis and management of acidity, gas, bloating, constipation,
+   Irritable Bowel Syndrome and other digestive problems.
+
+2. Liver diseases
+   Comprehensive evaluation and treatment of fatty liver, hepatitis,
+   jaundice, cirrhosis and other liver disorders.
+
+3. Obesity solutions
+   Personalized weight management planning including diet, lifestyle,
+   medical and endoscopic support for best long-term results.
+
+4. Pancreatobiliary Disorders
+   Expert diagnosis and treatment of bile duct and gallstones, acute and
+   chronic pancreatitis and their complications.
+
+5. GI Oncology
+   Specialized screening and surveillance for early diagnosis and management
+   of gastric and colorectal cancers.
+
+6. Advanced Endoscopy / ERCP / EUS
+   Minimally invasive diagnosis and treatment of problems in GI tract,
+   pancreas, liver and gall bladder with precision and care.
+
+============================================================
+PAGE: SERVICES — FETAL MEDICINE
+============================================================
+Section title: Fetal Medicine Services
+
+1. 3D/4D Ultrasonography
+   Advanced imaging that shows real-life movements and expressions of your
+   baby in the womb.
+
+2. Multiple Pregnancy Management
+   Detailed monitoring of twin and triplet pregnancies as to ensure a safer
+   journey for the mother as well the babies.
+
+3. High Risk Pregnancy Counselling
+   Counselling for women requiring special care due to maternal health
+   conditions, previous pregnancy complications or fetal concerns.
+
+4. Invasive Fetal Testing Procedures
+   Specialized procedure for early diagnosis of genetic and chromosomal
+   conditions.
+
+5. Fetal Echocardiography
+   Detailed structural and functional evaluation of the baby's heart.
+
+6. Fetal Neurosonography
+   Specialized scan of the baby's brain for monitoring neurological
+   development.
+
+============================================================
+PAGE: ABOUT
+============================================================
+Eyebrow: About Us
+Heading: A dedicated super-speciality centre for digestive health and fetal
+medicine services.
+
+Body copy:
+Led by Dr Harsh Jain and Dr Ishita Agarwal, the centre focuses on creating a
+trusted healthcare environment where patients can receive personalised
+attention, evidence based treatment and ethical medical care. From managing
+digestive and liver disorders to specialized fetal imaging and high risk
+pregnancy evaluation, our goal is to provide modern, reliable and accessible
+healthcare under one roof.
+
+Facility highlights (list):
+- AIIMS-trained doctors with experience from premiere institutes like Medanta
+  and Apollo.
+- State-of-the-art Ultrasound Machine for high definition pregnancy
+  sonography.
+- Endoscopy suite equipped with image enhancement for accurate diagnosis &
+  management.
+- Daycare facility for endoscopic procedures and treatments requiring minimal
+  hospital stay.
+- Admission facility for patients requiring hospitalization and advanced
+  medical support.
+- 24x7 on-call emergency services for patients in need.
+
+============================================================
+PAGE: WHY OORJA
+============================================================
+Eyebrow: Why Choose Us
+Heading: Why Oorja Is Your Top Choice?
+Subtext: Advanced, ethical, and patient-centred care with expertise in
+Gastroenterology, Liver Diseases, GI Endoscopy and Fetal Medicine — all under
+one roof.
+
+1. Expert-led care
+   Specialized consultation and treatment guided by experienced AIIMS-trained
+   doctors.
+
+2. Advanced Technology
+   State-of-the-art 3D/4D Ultrasonography Machine and a fully equipped
+   Endoscopy Suite.
+
+3. Comprehensive Care
+   Holistic care for digestive & liver disorders and advanced fetal
+   sonography.
+
+4. Personalized patient care
+   Individualized treatment plans focused on patient comfort, safety and long
+   term well-being.
+
+5. Evidence based treatment
+   Ethical and scientific medical care following current clinical standards.
+
+6. Preventive Healthcare
+   Emphasis on patient education, early diagnosis, lifestyle guidance and
+   disease prevention.
+
+7. Friendly Environment
+   Patient-friendly approach ensuring clear communication and supportive care
+   at every step.
+
+(Note: source site also references a "Youtube Video" element in this
+section — no video URL/content was provided on the source page. Placeholder
+video embed slot can be left empty or omitted; do not fabricate a link.)
+
+============================================================
+PAGE: OUR TEAM
+============================================================
+Heading: Meet Our Team
+
+Doctor 1:
+Name: Dr. Jain Harsh Prakash
+Qualifications:
+- MBBS (MAMC)
+- MD Medicine (MAMC)
+- DM Gastroenterology (AIIMS)
+- Fellowship in Interventional Gastroenterology (Medanta)
+- Ex-Consultant (Medanta)
+
+Doctor 2:
+Name: Dr. Ishita Agarwal
+Qualifications:
+- MBBS (Gold Medallist) (MAMC)
+- MS Obstetrics and Gynecology (MAMC), DNB, MNAMS
+- Ex-Senior Resident (AIIMS)
+- Fetal Medicine Fellowship (Apollo, Delhi)
+- FMF-UK Certified
+
+============================================================
+PAGE: TESTIMONIALS
+============================================================
+Heading: What Our Patients Say
+
+1. "Dr. Harsh Jain is a well-experienced doctor with more than 10 years of
+   experience. The consultation was excellent, and the hospital environment
+   was calm, clean, and welcoming."
+   — Harshdip Patil
+
+2. "Had a very good experience with Dr. Ishita Agarwal at Oorja Gastro Liver
+   and Fetal Medicine Center. She is professional, knowledgeable, and
+   explains every detail calmly during fetal scans and pregnancy
+   consultations. The staff is supportive and the clinic is well-maintained.
+   Highly recommended for fetal medicine, anomaly scans, and prenatal care."
+   — Payal Goyal
+
+3. "Dr. Ishita Agarwal is a great doctor in addition to being compassionate
+   and honest. We received the best fetal medicine care. Thank you so much!"
+   — Dr. Renu Agarwal
+
+4. "Dr. Harsh is one of the most humble and generous doctors I have ever met.
+   He listens patiently, understands patients thoroughly, and provides
+   excellent care. My 72-year-old mother recovered successfully under his
+   supervision, and we are always grateful for his support and expertise."
+   — Prakash Kumar
+
+5. "Excellent gastro doctor with accurate diagnosis and outstanding patient
+   care. Very knowledgeable, humble, and highly recommended."
+   — Hitesh Mishra
+
+============================================================
+PAGE: CONTACT
+============================================================
+Heading: Contact Us (new page — consolidates existing contact info into a
+dedicated page)
+- Address: Plot No-1, M.J.Park Society, Nr. DRB College, New City Light Rd,
+  Surat, Gujarat 395007
+- Phone: +91 87807 61808
+- Email: oorjagfmc@gmail.com
+- Map link: https://maps.app.goo.gl/Q9qjTD8tYFkaVp2E7
+- WhatsApp: https://wa.me/918780761808
+- Social: Facebook / Instagram / LinkedIn (links above)
+
+============================================================
+FOOTER (all pages)
+============================================================
+Tagline: Integrating Science, Energy and Life
+
+Quick Links: About Us | Services | Our Team | Testimonials | Why Oorja? |
+Terms & Conditions
+
+Gastroenterology Services list: Digestive issues | Liver diseases | Obesity
+solutions | Pancreatobiliary Disorders | GI Oncology | Advanced Endoscopy/
+ERCP/ EUS
+
+Fetal Medicine Services list: 3D/4D Ultrasonography | Multiple Pregnancy
+Management | High Risk Pregnancy Counselling | Invasive Fetal Testing
+Procedures | Fetal Echocardiography | Fetal Neurosonography
+
+Contact Info: Address / Email / Phone (as above)
+
+Copyright: Oorja Gastro-Liver and Fetal Medicine Centre, All right reserved.
+Credit line: Designed By EchoZest Solutions (original site credit — carry
+over or omit per client's preference for the new build)
+
+============================================================
+IMAGES REFERENCED ON SOURCE SITE (reuse same assets)
+============================================================
+logo.png, carousel-1.jpg (hero), about-1.jpg,
+service-1.jpg .. service-13.jpg (gastro + fetal service images),
+doctor-1.jpg (Dr. Jain Harsh Prakash), doctor-2.jpg (Dr. Ishita Agarwal)
