@@ -1,6 +1,6 @@
 import React, { useState, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Search, X, Calendar, Clock, ArrowRight, Share2, Sparkles, User, Mail, Heart, Check, ChevronRight, BookOpen, ShieldCheck } from 'lucide-react';
+import { Search, X, Calendar, Clock, ArrowRight, Share2, Sparkles, User, Heart, ChevronRight, BookOpen } from 'lucide-react';
 import { blogCategories, blogArticles } from '../data/blogData';
 import CTASection from '../components/ui/CTASection';
 import MedicalImage from '../components/ui/MedicalImage';
@@ -10,8 +10,6 @@ export default function Blog() {
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedArticle, setSelectedArticle] = useState(null);
   const [copiedLink, setCopiedLink] = useState(false);
-  const [subscribed, setSubscribed] = useState(false);
-  const [emailInput, setEmailInput] = useState("");
 
   // Filter articles based on active category and search query
   const filteredArticles = useMemo(() => {
@@ -34,14 +32,7 @@ export default function Blog() {
     }
   };
 
-  const handleSubscribe = (e) => {
-    e.preventDefault();
-    if (emailInput.trim()) {
-      setSubscribed(true);
-      setEmailInput("");
-      setTimeout(() => setSubscribed(false), 5000);
-    }
-  };
+
 
   return (
     <div className="pt-20 sm:pt-24 overflow-hidden bg-slate-50 text-slate-900 min-h-screen">
@@ -224,53 +215,7 @@ export default function Blog() {
         </div>
       </section>
 
-      {/* 4. HEALTH TIPS NEWSLETTER BOX — WHITE & GREEN THEME */}
-      <section className="py-16 bg-white border-y border-slate-200">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-gradient-to-br from-teal-500 via-emerald-600 to-teal-700 rounded-3xl p-8 sm:p-12 lg:p-16 text-white relative overflow-hidden shadow-2xl">
-            <div className="absolute top-0 right-0 w-96 h-96 bg-white/10 rounded-full blur-2xl pointer-events-none" />
-            
-            <div className="max-w-2xl mx-auto text-center relative z-10">
-              <div className="w-14 h-14 rounded-2xl bg-white/20 border border-white/30 flex items-center justify-center mx-auto mb-6 text-white shadow-inner">
-                <Mail className="w-7 h-7" />
-              </div>
-              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold mb-4 tracking-tight">
-                Get Clinical Health Tips in Your Inbox
-              </h2>
-              <p className="text-teal-50 text-sm sm:text-base leading-relaxed mb-8">
-                Subscribe to our weekly digestive health and fetal medicine bulletin. No spam—only evidence-based advice curated directly by our AIIMS & FMF-UK specialists.
-              </p>
 
-              <form onSubmit={handleSubscribe} className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
-                <input
-                  type="email"
-                  required
-                  placeholder="Enter your email address..."
-                  value={emailInput}
-                  onChange={(e) => setEmailInput(e.target.value)}
-                  className="flex-1 px-5 py-3.5 rounded-xl bg-white text-slate-900 placeholder:text-slate-400 text-sm outline-none shadow-md transition-all focus:ring-2 focus:ring-white"
-                />
-                <button
-                  type="submit"
-                  className="px-6 py-3.5 bg-slate-900 hover:bg-slate-800 text-white text-sm font-extrabold rounded-xl transition-all shadow-lg flex items-center justify-center gap-2 whitespace-nowrap"
-                >
-                  {subscribed ? (
-                    <>
-                      <Check className="w-4 h-4" /> Subscribed!
-                    </>
-                  ) : (
-                    "Subscribe Free"
-                  )}
-                </button>
-              </form>
-              
-              <p className="text-[11px] text-teal-100 mt-4 flex items-center justify-center gap-1.5">
-                <ShieldCheck className="w-3.5 h-3.5 text-white" /> Your privacy is protected. Unsubscribe anytime with 1-click.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* 5. ARTICLE READING MODAL / POP-OVER */}
       <AnimatePresence>
