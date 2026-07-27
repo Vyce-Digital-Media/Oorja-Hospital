@@ -40,7 +40,7 @@ export const navLinks = [
     ]
   },
   { name: "Our Team", path: "/team" },
-  { name: "Health Blog", path: "/blog" },
+  { name: "Blog", path: "/blog" },
   { name: "Testimonials", path: "/testimonials" },
 ];
 
@@ -311,7 +311,7 @@ export const footerData = {
     { name: "About", path: "/about" },
     { name: "Services", path: "/services" },
     { name: "Our Team", path: "/team" },
-    { name: "Health Blog", path: "/blog" },
+    { name: "Blog", path: "/blog" },
     { name: "Testimonials", path: "/testimonials" },
   ],
   gastroList: [
