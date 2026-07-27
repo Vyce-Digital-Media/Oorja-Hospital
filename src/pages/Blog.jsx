@@ -224,6 +224,7 @@ export default function Blog() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
+            data-lenis-prevent="true"
             className="fixed inset-0 z-50 bg-slate-900/80 backdrop-blur-sm overflow-y-auto flex items-start justify-center p-4 sm:p-6 md:p-10"
           >
             <motion.div
@@ -231,7 +232,7 @@ export default function Blog() {
               animate={{ opacity: 1, y: 0, scale: 1 }}
               exit={{ opacity: 0, y: 30, scale: 0.96 }}
               transition={{ duration: 0.3 }}
-              className="bg-white rounded-3xl max-w-4xl w-full shadow-2xl overflow-hidden my-auto relative border border-slate-100"
+              className="bg-white rounded-3xl max-w-4xl w-full shadow-2xl overflow-hidden my-8 sm:my-12 relative border border-slate-100"
             >
               {/* Top Bar / Close */}
               <div className="sticky top-0 z-20 bg-white/90 backdrop-blur-md px-6 py-4 border-b border-slate-100 flex items-center justify-between">
