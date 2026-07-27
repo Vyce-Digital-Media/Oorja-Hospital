@@ -40,9 +40,8 @@ export const navLinks = [
     ]
   },
   { name: "Our Team", path: "/team" },
-  { name: "Why Oorja?", path: "/why-oorja" },
+  { name: "Health Blog", path: "/blog" },
   { name: "Testimonials", path: "/testimonials" },
-  { name: "Contact Us", path: "/contact" },
 ];
 
 export const homeData = {
@@ -225,14 +224,6 @@ export const whyOorjaData = {
       featured: false,
       accent: "rose",
     },
-    {
-      id: 7,
-      title: "Friendly Environment",
-      description: "Patient-friendly approach ensuring clear communication and supportive care at every step.",
-      iconName: "Smile",
-      featured: false,
-      accent: "gold",
-    },
   ]
 };
 
@@ -320,9 +311,8 @@ export const footerData = {
     { name: "About", path: "/about" },
     { name: "Services", path: "/services" },
     { name: "Our Team", path: "/team" },
-    { name: "Why Oorja?", path: "/why-oorja" },
+    { name: "Health Blog", path: "/blog" },
     { name: "Testimonials", path: "/testimonials" },
-    { name: "Contact Us", path: "/contact" },
   ],
   gastroList: [
     "Digestive issues",

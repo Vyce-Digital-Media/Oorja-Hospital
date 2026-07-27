@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { MapPin, Phone, Mail, ChevronRight, Heart } from 'lucide-react';
+import { ChevronRight } from 'lucide-react';
 import { globalData, footerData } from '../../data/content';
 import MedicalImage from '../ui/MedicalImage';
 
@@ -79,7 +79,7 @@ export default function Footer() {
               Quick Links
             </h4>
             <ul className="space-y-2.5">
-              {footerData.quickLinks.map((link) => (
+              {footerData.quickLinks.filter(link => link.name !== 'Contact Us').map((link) => (
                 <li key={link.name}>
                   <Link to={link.path}
                     className="text-sm text-teal-100 hover:text-white transition-colors flex items-center gap-1.5 group">
@@ -126,45 +126,19 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Col 4: Contact Info (3 cols) */}
+          {/* Col 4: Contact Us CTA (3 cols) */}
           <div className="lg:col-span-3 space-y-4">
             <h4 className="text-sm font-bold text-white tracking-wider uppercase border-l-2 border-white/40 pl-3">
               Contact Us
             </h4>
-            <ul className="space-y-3 text-sm text-teal-100">
-              <li className="flex items-start gap-3">
-                <div className="w-8 h-8 rounded-lg bg-white/10 flex items-center justify-center flex-shrink-0 mt-0.5">
-                  <MapPin className="w-4 h-4" />
-                </div>
-                <a href={globalData.contact.mapUrl} target="_blank" rel="noopener noreferrer"
-                  className="hover:text-white transition-colors leading-relaxed text-xs">
-                  {globalData.contact.address}
-                </a>
-              </li>
-              <li className="flex items-center gap-3">
-                <div className="w-8 h-8 rounded-lg bg-white/10 flex items-center justify-center flex-shrink-0">
-                  <Phone className="w-4 h-4" />
-                </div>
-                <a href={`tel:${globalData.contact.phone.replace(/[^0-9+]/g, '')}`}
-                  className="hover:text-white transition-colors font-semibold text-xs">
-                  {globalData.contact.phone}
-                </a>
-              </li>
-              <li className="flex items-center gap-3">
-                <div className="w-8 h-8 rounded-lg bg-white/10 flex items-center justify-center flex-shrink-0">
-                  <Mail className="w-4 h-4" />
-                </div>
-                <a href={`mailto:${globalData.contact.email}`}
-                  className="hover:text-white transition-colors truncate text-xs">
-                  {globalData.contact.email}
-                </a>
-              </li>
-            </ul>
-            <a href={globalData.contact.whatsappUrl} target="_blank" rel="noopener noreferrer"
+            <p className="text-xs text-teal-100 leading-relaxed">
+              Have questions or want to book an appointment with our specialists?
+            </p>
+            <Link to="/contact"
               className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-white text-teal-600 text-xs font-bold hover:bg-teal-50 transition-all w-full justify-center shadow-sm">
-              <span>Book via WhatsApp</span>
+              <span>Contact Us Page</span>
               <ChevronRight className="w-3.5 h-3.5" />
-            </a>
+            </Link>
           </div>
 
         </div>

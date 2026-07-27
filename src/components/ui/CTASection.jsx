@@ -1,11 +1,12 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { MessageSquare, Phone, Calendar, ArrowRight, CheckCircle2 } from 'lucide-react';
+import { MessageSquare, Calendar, ArrowRight, CheckCircle2 } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import { globalData } from '../../data/content';
 
 export default function CTASection({
   title = "Ready to Prioritise Your Digestive & Maternal Health?",
-  subtitle = "Schedule a consultation with our AIIMS-trained specialists today. Fast, confidential booking directly via WhatsApp or phone.",
+  subtitle = "Schedule a consultation with our AIIMS-trained specialists today. Fast, confidential booking directly via our Contact page or WhatsApp.",
   isLight = true,
 }) {
   return (
@@ -42,23 +43,22 @@ export default function CTASection({
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-2">
+              <Link
+                to="/contact"
+                className="w-full sm:w-auto px-7 py-3.5 rounded-xl bg-white text-teal-600 hover:bg-teal-50 font-bold text-sm shadow-md flex items-center justify-center gap-2 transition-all duration-200"
+              >
+                <MessageSquare className="w-4 h-4" />
+                <span>Contact Us Page</span>
+                <ArrowRight className="w-4 h-4 ml-1 opacity-70" />
+              </Link>
+
               <a
                 href={globalData.contact.whatsappUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full sm:w-auto px-7 py-3.5 rounded-xl bg-white text-teal-600 hover:bg-teal-50 font-bold text-sm shadow-md flex items-center justify-center gap-2 transition-all duration-200"
-              >
-                <MessageSquare className="w-4 h-4" />
-                <span>Book via WhatsApp</span>
-                <ArrowRight className="w-4 h-4 ml-1 opacity-70" />
-              </a>
-
-              <a
-                href={`tel:${globalData.contact.phone.replace(/[^0-9+]/g, '')}`}
                 className="inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-xl border border-white/30 bg-white/10 hover:bg-white/20 text-white font-medium text-sm transition-all duration-200 w-full sm:w-auto"
               >
-                <Phone className="w-4 h-4 text-teal-100" />
-                <span>Call: {globalData.contact.phone}</span>
+                <span>Book via WhatsApp</span>
               </a>
             </div>
 

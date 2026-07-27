@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link, NavLink, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Menu, X, ChevronDown, Phone } from 'lucide-react';
+import { Menu, X, ChevronDown, MessageSquare } from 'lucide-react';
 import { globalData, navLinks } from '../../data/content';
 import MedicalImage from '../ui/MedicalImage';
 
@@ -134,32 +134,30 @@ export default function Navbar() {
         {/* Right: Phone + CTA */}
         <div className="hidden md:flex items-center gap-3 flex-shrink-0">
           <a
-            href={`tel:${globalData.contact.phone.replace(/[^0-9+]/g, '')}`}
-            className="hidden xl:flex items-center gap-1.5 text-sm font-medium text-slate-700 hover:text-teal-600 transition-colors"
-          >
-            <Phone className="w-4 h-4 text-teal-500" />
-            <span>{globalData.contact.phone}</span>
-          </a>
-          <a
             href={globalData.contact.whatsappUrl}
             target="_blank"
             rel="noopener noreferrer"
+            className="hidden xl:flex items-center gap-1.5 text-sm font-medium text-slate-700 hover:text-teal-600 transition-colors"
+          >
+            <MessageSquare className="w-4 h-4 text-teal-500" />
+            <span>{globalData.contact.phone}</span>
+          </a>
+          <Link
+            to="/contact"
             className="bg-teal-500 hover:bg-teal-600 text-white px-5 py-2.5 rounded-lg text-sm font-semibold flex items-center gap-2 transition-all duration-200 shadow-sm hover:shadow-md whitespace-nowrap"
           >
             <span>Contact Us</span>
-          </a>
+          </Link>
         </div>
 
         {/* Mobile: Book + Hamburger */}
         <div className="flex items-center gap-2 lg:hidden">
-          <a
-            href={globalData.contact.whatsappUrl}
-            target="_blank"
-            rel="noopener noreferrer"
+          <Link
+            to="/contact"
             className="bg-teal-500 text-white px-3 py-1.5 rounded-lg text-xs font-semibold"
           >
-            Book
-          </a>
+            Contact
+          </Link>
           <button
             type="button"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
@@ -210,14 +208,12 @@ export default function Navbar() {
                 </div>
               ))}
               <div className="pt-3 border-t border-slate-100 mt-3">
-                <a
-                  href={globalData.contact.whatsappUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                <Link
+                  to="/contact"
                   className="block w-full bg-teal-500 hover:bg-teal-600 text-white py-3 rounded-xl font-semibold text-center transition-colors"
                 >
-                  Book Appointment
-                </a>
+                  Contact Us
+                </Link>
               </div>
             </div>
           </motion.div>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Routes, Route, useLocation } from 'react-router-dom';
+import { Routes, Route, useLocation, Navigate } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
 
 import Navbar from './components/layout/Navbar';
@@ -14,7 +14,7 @@ import ServicesHub from './pages/ServicesHub';
 import GastroServices from './pages/GastroServices';
 import FetalMedicine from './pages/FetalMedicine';
 import Team from './pages/Team';
-import WhyOorja from './pages/WhyOorja';
+import Blog from './pages/Blog';
 import Testimonials from './pages/Testimonials';
 import Contact from './pages/Contact';
 
@@ -36,7 +36,8 @@ export default function App() {
               <Route path="/services/gastroenterology" element={<PageTransition><GastroServices /></PageTransition>} />
               <Route path="/services/fetal-medicine" element={<PageTransition><FetalMedicine /></PageTransition>} />
               <Route path="/team" element={<PageTransition><Team /></PageTransition>} />
-              <Route path="/why-oorja" element={<PageTransition><WhyOorja /></PageTransition>} />
+              <Route path="/blog" element={<PageTransition><Blog /></PageTransition>} />
+              <Route path="/why-oorja" element={<Navigate to="/about" replace />} />
               <Route path="/testimonials" element={<PageTransition><Testimonials /></PageTransition>} />
               <Route path="/contact" element={<PageTransition><Contact /></PageTransition>} />
             </Routes>

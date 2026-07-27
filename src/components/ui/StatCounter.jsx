@@ -30,12 +30,12 @@ export default function StatCounter({
   }, [isInView, value, delay, motionValue]);
 
   return (
-    <div ref={ref} className="flex flex-col items-center sm:items-start p-6 rounded-2xl bg-[#0B192C]/80 backdrop-blur-sm border border-blue-500/20 shadow-lg hover:border-cyan-400/50 transition-colors">
-      <div className="flex items-baseline gap-1 font-serif font-bold text-4xl sm:text-5xl lg:text-6xl text-white tracking-tight">
+    <div ref={ref} className="flex flex-col items-center sm:items-start p-6 rounded-2xl bg-white border border-slate-200/80 shadow-sm hover:shadow-md hover:border-teal-400 transition-all">
+      <div className="flex items-baseline gap-1 font-serif font-extrabold text-4xl sm:text-5xl lg:text-6xl text-slate-900 tracking-tight">
         <motion.span>{roundedValue}</motion.span>
-        {suffix && <span className="text-cyan-400 text-3xl sm:text-4xl lg:text-5xl">{suffix}</span>}
+        {suffix && <span className="text-teal-600 text-3xl sm:text-4xl lg:text-5xl font-extrabold">{suffix}</span>}
       </div>
-      <span className="text-xs sm:text-sm font-semibold uppercase tracking-wider text-slate-300 mt-2 text-center sm:text-left">
+      <span className="text-xs sm:text-sm font-bold uppercase tracking-wider text-slate-600 mt-2 text-center sm:text-left">
         {label}
       </span>
     </div>
