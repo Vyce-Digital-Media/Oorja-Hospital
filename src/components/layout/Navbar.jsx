@@ -35,8 +35,8 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between gap-4">
         {/* Logo & Brand */}
         <Link to="/" className="flex items-center gap-2.5 group focus:outline-none flex-shrink-0">
-          <div className="w-10 h-10 rounded-lg overflow-hidden flex-shrink-0 bg-white shadow-sm border border-slate-100 transition-transform duration-300 group-hover:scale-105">
-            <MedicalImage src={globalData.images.logo} alt="Oorja Logo" className="w-full h-full object-contain p-0.5" />
+          <div className="w-12 h-12 flex-shrink-0 transition-transform duration-300 group-hover:scale-105">
+            <img src="/logo-new.png" alt="Oorja Logo" className="w-full h-full object-contain" />
           </div>
           <div className="flex flex-col leading-tight">
             <span className="font-bold text-base text-slate-900 tracking-tight group-hover:text-teal-600 transition-colors whitespace-nowrap">
