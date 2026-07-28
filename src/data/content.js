@@ -30,7 +30,6 @@ export const globalData = {
 
 export const navLinks = [
   { name: "Home", path: "/" },
-  { name: "About", path: "/about" },
   { 
     name: "Services", 
     path: "/services",
@@ -39,6 +38,7 @@ export const navLinks = [
       { name: "Fetal Medicine", path: "/services/fetal-medicine" },
     ]
   },
+  { name: "About", path: "/about" },
   { name: "Our Team", path: "/team" },
   { name: "Blog", path: "/blog" },
   { name: "Testimonials", path: "/testimonials" },
