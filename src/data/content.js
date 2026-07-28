@@ -9,8 +9,8 @@ export const globalData = {
     address: "Plot No-1, M.J.Park Society, Nr. DRB College, New City Light Rd, Surat, Gujarat 395007",
     phone: "+91 87807 61808",
     email: "oorjagfmc@gmail.com",
-    mapUrl: "https://maps.app.goo.gl/Q9qjTD8tYFkaVp2E7",
-    mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3720.590124119934!2d72.78854467605912!3d21.16870028292857!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be04dec74c86bfd%3A0x6b306fc6e2327702!2sOorja%20Gastro-Liver%20and%20Fetal%20Medicine%20Centre!5e0!3m2!1sen!2sin!4v1716000000000!5m2!1sen!2sin",
+    mapUrl: "https://maps.app.goo.gl/ivSJnEFrV7bfexFCA",
+    mapEmbedUrl: "https://maps.google.com/maps?q=21.1534554,72.7995717&hl=en&z=16&output=embed",
     whatsappUrl: "https://wa.me/918780761808",
   },
   social: {
