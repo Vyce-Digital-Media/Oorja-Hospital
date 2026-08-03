@@ -23,8 +23,8 @@ export const globalData = {
     logo: "/logo-new.png",
     hero: "/carousel-1.jpg",
     about: "/hospital-exterior.jpg",
-    doctor1: "/dr-harsh-jain.jpg",
-    doctor2: "/dr-ishita-agarwal.jpg",
+    doctor1: "/IMG_0910_(1).jpg",
+    doctor2: "/IMG_0924_(1).jpg",
   }
 };
 
@@ -235,7 +235,7 @@ export const teamData = {
       name: "Dr. Jain Harsh Prakash",
       specialty: "Gastroenterology, Hepatology & Interventional Endoscopy",
       accent: "teal",
-      image: "/dr-harsh-jain.jpg",
+      image: "/IMG_0910_(1).jpg",
       qualifications: [
         "MBBS (MAMC)",
         "MD Medicine (MAMC)",
@@ -250,7 +250,7 @@ export const teamData = {
       name: "Dr. Ishita Agarwal",
       specialty: "Maternal-Fetal Medicine & High-Risk Pregnancy",
       accent: "rose",
-      image: "/dr-ishita-agarwal.jpg",
+      image: "/IMG_0924_(1).jpg",
       qualifications: [
         "MBBS (Gold Medallist) (MAMC)",
         "MS Obstetrics and Gynecology (MAMC), DNB, MNAMS",

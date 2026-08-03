@@ -18,7 +18,7 @@ export const blogArticles = [
     author: {
       name: "Dr. Harsh Jain",
       role: "Lead Gastroenterologist & Hepatologist (AIIMS Trained)",
-      avatar: "/dr-harsh-jain.jpg"
+      avatar: "/IMG_0910_(1).jpg"
     },
     image: "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&w=800&q=80",
     featured: true,
@@ -62,7 +62,7 @@ export const blogArticles = [
     author: {
       name: "Dr. Ishita Agarwal",
       role: "Senior Fetal Medicine Specialist (FMF-UK Certified)",
-      avatar: "/dr-ishita-agarwal.jpg"
+      avatar: "/IMG_0924_(1).jpg"
     },
     image: "https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?auto=format&fit=crop&w=800&q=80",
     featured: false,
@@ -102,7 +102,7 @@ export const blogArticles = [
     author: {
       name: "Dr. Harsh Jain",
       role: "Lead Gastroenterologist & Hepatologist (AIIMS Trained)",
-      avatar: "/dr-harsh-jain.jpg"
+      avatar: "/IMG_0910_(1).jpg"
     },
     image: "https://images.unsplash.com/photo-1543362906-acfc16c67564?auto=format&fit=crop&w=800&q=80",
     featured: false,
@@ -143,7 +143,7 @@ export const blogArticles = [
     author: {
       name: "Dr. Harsh Jain",
       role: "Lead Gastroenterologist & Hepatologist (AIIMS Trained)",
-      avatar: "/dr-harsh-jain.jpg"
+      avatar: "/IMG_0910_(1).jpg"
     },
     image: "https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=800&q=80",
     featured: false,
@@ -185,7 +185,7 @@ export const blogArticles = [
     author: {
       name: "Oorja Medical Team",
       role: "Clinical Nutrition & Wellness Advisory",
-      avatar: "/dr-ishita-agarwal.jpg"
+      avatar: "/IMG_0924_(1).jpg"
     },
     image: "https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&w=800&q=80",
     featured: false,

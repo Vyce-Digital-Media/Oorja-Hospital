@@ -137,7 +137,7 @@ export default function Home() {
               <motion.div variants={fadeUp} custom={4} className="flex items-center gap-4 pt-2">
                 {/* Avatar stack */}
                 <div className="flex -space-x-2.5">
-                  {['/dr-harsh-jain.jpg', '/dr-ishita-agarwal.jpg', '/about-1.jpg'].map((src, i) => (
+                  {['/IMG_0910_(1).jpg', '/IMG_0924_(1).jpg', '/about-1.jpg'].map((src, i) => (
                     <div key={i} className="w-9 h-9 rounded-full border-2 border-white overflow-hidden shadow-sm bg-teal-100 flex-shrink-0">
                       <MedicalImage src={src} alt="doctor" className="w-full h-full object-cover object-top" />
                     </div>
