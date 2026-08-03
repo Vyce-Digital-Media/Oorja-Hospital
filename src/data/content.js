@@ -34,8 +34,10 @@ export const navLinks = [
     name: "Services", 
     path: "/services",
     dropdown: [
-      { name: "Gastroenterology", path: "/services/gastroenterology" },
-      { name: "Fetal Medicine", path: "/services/fetal-medicine" },
+      { name: "Gastroenterology", path: "/services/gastroenterology", subtext: "Digestive and Liver Care" },
+      { name: "Advanced Endoscopy Services", path: "/services/gastroenterology#endoscopy", subtext: "Endoscopy, Colonoscopy, ERCP, EUS" },
+      { name: "Fetal Medicine", path: "/services/fetal-medicine", subtext: "Advanced 3D/4D Fetal Scans" },
+      { name: "Invasive Fetal Procedures", path: "/services/fetal-medicine#invasive", subtext: "Amniocentesis, CVS, Fetal Reduction" },
     ]
   },
   { name: "About", path: "/about" },

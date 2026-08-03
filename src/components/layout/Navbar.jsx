@@ -91,7 +91,7 @@ export default function Navbar() {
                           <div className="h-px bg-slate-100 my-1" />
                           {link.dropdown.map((subItem) => (
                             <Link
-                              key={subItem.path}
+                              key={subItem.name}
                               to={subItem.path}
                               className={`block px-3 py-2.5 text-sm rounded-lg transition-all duration-150 ${
                                 location.pathname === subItem.path
@@ -101,7 +101,7 @@ export default function Navbar() {
                             >
                               <div className="font-medium">{subItem.name}</div>
                               <div className="text-[11px] text-slate-400 mt-0.5">
-                                {subItem.name.includes('Gastro') ? 'Digestive & Liver Care' : 'Advanced 3D/4D & Fetal Scans'}
+                                {subItem.subtext}
                               </div>
                             </Link>
                           ))}
@@ -196,7 +196,7 @@ export default function Navbar() {
                     <div className="pl-6 py-1 space-y-1 ml-4 border-l-2 border-teal-100">
                       {link.dropdown.map((subItem) => (
                         <Link
-                          key={subItem.path}
+                          key={subItem.name}
                           to={subItem.path}
                           className="block px-3 py-2 rounded-lg text-sm text-slate-600 hover:text-teal-600 hover:bg-teal-50 transition-colors"
                         >
