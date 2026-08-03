@@ -102,7 +102,7 @@ export default function Footer() {
                   Gastroenterology
                 </Link>
                 <ul className="space-y-1.5">
-                  {footerData.gastroList.slice(0, 3).map((item, idx) => (
+                  {footerData.gastroList.slice(0, 4).map((item, idx) => (
                     <li key={idx} className="text-xs text-teal-100/80 truncate flex items-center gap-1.5">
                       <span className="w-1 h-1 rounded-full bg-white/60" />
                       <span>{item}</span>
@@ -115,7 +115,7 @@ export default function Footer() {
                   Fetal Medicine
                 </Link>
                 <ul className="space-y-1.5">
-                  {footerData.fetalList.slice(0, 3).map((item, idx) => (
+                  {footerData.fetalList.slice(0, 4).map((item, idx) => (
                     <li key={idx} className="text-xs text-teal-100/80 truncate flex items-center gap-1.5">
                       <span className="w-1 h-1 rounded-full bg-white/60" />
                       <span>{item}</span>

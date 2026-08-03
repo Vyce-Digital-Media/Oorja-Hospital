@@ -7,6 +7,10 @@ const fallbackMap = {
   "/doctor-1.jpg": "https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=800&q=80", // Male doctor
   "/doctor-2.jpg": "https://images.unsplash.com/photo-1594824476967-48c8b964273f?auto=format&fit=crop&w=800&q=80", // Female doctor
   "/service-1.jpg": "https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=800&q=80", // Digestive care / medical test
+  "/digestive-ibs.jpg": "/digestive-ibs.jpg", // Person with IBS / digestive discomfort
+  "/liver-fibroscan.jpg": "/liver-fibroscan.jpg", // Doctor performing FibroScan on patient
+  "/obesity-consultation.jpg": "/obesity-consultation.jpg", // Overweight patient in obesity consultation
+  "/pancreatobiliary-ercp.jpg": "/pancreatobiliary-ercp.jpg", // Bile duct stone / pancreatitis ERCP monitor
   "/service-2.jpg": "https://images.unsplash.com/photo-1584362917165-526a968579e8?auto=format&fit=crop&w=800&q=80", // Liver care / anatomy diagnosis
   "/service-3.jpg": "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&w=800&q=80", // Diet / wellness / obesity consultation
   "/service-4.jpg": "https://images.unsplash.com/photo-1579684453423-f84349ef60b0?auto=format&fit=crop&w=800&q=80", // Pancreas / gall bladder diagnosis

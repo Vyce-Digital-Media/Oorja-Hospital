@@ -42,7 +42,7 @@ export default function ServiceCard({
             <MedicalImage
               src={service.image}
               alt={service.title}
-              className="w-full h-full object-cover group-hover:scale-105 transition-all duration-700 ease-out"
+              className="w-full h-full object-cover object-top group-hover:scale-105 transition-all duration-700 ease-out"
             />
             <div className="absolute inset-0 bg-slate-900/10 group-hover:bg-transparent transition-opacity duration-500" />
             <div className={`absolute top-3 left-3 z-10 w-10 h-10 rounded-xl flex items-center justify-center backdrop-blur-md shadow-md ${style.iconBg}`}>

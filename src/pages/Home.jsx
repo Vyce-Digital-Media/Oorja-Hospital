@@ -26,10 +26,9 @@ const fadeUp = {
 
 /* ─── SERVICES QUICK BOOK CARDS ─────────────────────────────── */
 const quickServices = [
-  { icon: Activity, label: 'Digestive Care', desc: 'Acidity, IBS, bloating & gut health solutions by specialists.' },
-  { icon: Ambulance, label: 'Emergency', desc: '24x7 on-call emergency support for urgent gastro & fetal needs.' },
-  { icon: Building2, label: 'Medical Centre', desc: 'Daycare & admission facility with advanced diagnostic equipment.' },
-  { icon: Stethoscope, label: 'Specialist Doctor', desc: 'AIIMS-trained gastro & FMF-UK certified fetal medicine experts.' },
+  { icon: Stethoscope, label: 'Specialist Doctor', desc: 'AIIMS-trained Gastroenterologist and FMF-UK Certified Fetal Medicine Experts.' },
+  { icon: Building2, label: 'In-patient Facility', desc: 'Daycare and admission facility with state-of-the-art equipment.' },
+  { icon: Ambulance, label: 'Emergency', desc: '24x7 on-call emergency support for urgent gastro & fetal medicine needs.' },
 ];
 
 /* ─── FACILITIES TABS ────────────────────────────────────────── */
@@ -41,9 +40,15 @@ const facilityTabs = [
     desc: 'Comprehensive evaluation and treatment of all digestive disorders, fatty liver, hepatitis, jaundice, cirrhosis and endoscopic procedures by DM Gastroenterology specialist from AIIMS.',
   },
   {
-    label: 'Fetal Medicine & Scans',
+    label: 'Advanced Endoscopy',
+    image: '/service-6.jpg',
+    title: 'Advanced Endoscopy / ERCP / EUS',
+    desc: 'Minimally invasive diagnosis and treatment of GI tract, pancreas, liver and gallbladder problems with precision endoscopy equipment.',
+  },
+  {
+    label: 'Fetal Medicine',
     image: '/service-7.jpg',
-    title: '3D/4D Fetal Medicine & HD Scans',
+    title: 'High Definition 3D/4D Ultrasonography',
     desc: 'Advanced real-time imaging of your baby in the womb with state-of-the-art 3D/4D ultrasound technology by an FMF-UK certified specialist.',
   },
   {
@@ -51,12 +56,6 @@ const facilityTabs = [
     image: '/service-9.jpg',
     title: 'High Risk Pregnancy Counselling',
     desc: 'Specialized monitoring and expert counselling for women with maternal health conditions, previous complications, or complex fetal concerns.',
-  },
-  {
-    label: 'Advanced Endoscopy',
-    image: '/service-6.jpg',
-    title: 'Advanced Endoscopy / ERCP / EUS',
-    desc: 'Minimally invasive diagnosis and treatment of GI tract, pancreas, liver and gallbladder problems with precision endoscopy equipment.',
   },
   {
     label: 'Fetal Echocardiography',
@@ -145,8 +144,8 @@ export default function Home() {
                   ))}
                 </div>
                 <div>
-                  <span className="font-bold text-slate-900 text-sm">1000+ </span>
-                  <span className="text-slate-500 text-sm">Patients Treated</span>
+                  <span className="font-bold text-slate-900 text-sm">10+ </span>
+                  <span className="text-slate-500 text-sm">years of experience</span>
                 </div>
               </motion.div>
             </motion.div>
@@ -204,10 +203,10 @@ export default function Home() {
             </p>
           </motion.div>
 
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6">
             {quickServices.map((item, idx) => {
               const Icon = item.icon;
-              const isHighlighted = idx === 1;
+              const isHighlighted = item.label === 'Emergency';
               return (
                 <motion.div
                   key={item.label}
@@ -215,15 +214,13 @@ export default function Home() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.5, delay: idx * 0.08 }}
-                  className={`rounded-2xl p-6 flex flex-col items-center text-center transition-all duration-300 hover:-translate-y-1 ${
-                    isHighlighted
-                      ? 'bg-white shadow-xl shadow-teal-700/20'
-                      : 'bg-teal-600/50 hover:bg-teal-600/70 border border-teal-400/30'
-                  }`}
+                  className={`rounded-2xl p-6 flex flex-col items-center text-center transition-all duration-300 hover:-translate-y-1 ${isHighlighted
+                    ? 'bg-white shadow-xl shadow-teal-700/20'
+                    : 'bg-teal-600/50 hover:bg-teal-600/70 border border-teal-400/30'
+                    }`}
                 >
-                  <div className={`w-14 h-14 rounded-2xl flex items-center justify-center mb-4 ${
-                    isHighlighted ? 'bg-teal-50 text-teal-500' : 'bg-white/10 text-white'
-                  }`}>
+                  <div className={`w-14 h-14 rounded-2xl flex items-center justify-center mb-4 ${isHighlighted ? 'bg-teal-50 text-teal-500' : 'bg-white/10 text-white'
+                    }`}>
                     <Icon className="w-7 h-7" />
                   </div>
                   <h3 className={`font-bold text-base mb-2 ${isHighlighted ? 'text-slate-900' : 'text-white'}`}>
@@ -255,7 +252,7 @@ export default function Home() {
               <span className="text-teal-500">Facilities</span> and Services
             </h2>
             <p className="text-slate-500 text-base max-w-xl mx-auto">
-              Advanced, ethical and patient-centred care — all under one roof at Oorja Centre.
+              Advanced, ethical and patient-centred care — all under one roof at Oorja.
             </p>
           </motion.div>
 
@@ -266,11 +263,10 @@ export default function Home() {
                 <button
                   key={tab.label}
                   onClick={() => setActiveTab(idx)}
-                  className={`w-full text-left px-5 py-3.5 rounded-xl text-sm font-semibold transition-all duration-200 flex items-center justify-between group ${
-                    activeTab === idx
-                      ? 'bg-teal-500 text-white shadow-md shadow-teal-200'
-                      : 'text-slate-700 hover:bg-teal-50 hover:text-teal-600 border border-transparent hover:border-teal-100'
-                  }`}
+                  className={`w-full text-left px-5 py-3.5 rounded-xl text-sm font-semibold transition-all duration-200 flex items-center justify-between group ${activeTab === idx
+                    ? 'bg-teal-500 text-white shadow-md shadow-teal-200'
+                    : 'text-slate-700 hover:bg-teal-50 hover:text-teal-600 border border-transparent hover:border-teal-100'
+                    }`}
                 >
                   <span>{tab.label}</span>
                   <ChevronRight className={`w-4 h-4 flex-shrink-0 transition-transform ${activeTab === idx ? 'translate-x-0.5' : 'opacity-0 group-hover:opacity-100'}`} />
@@ -306,7 +302,7 @@ export default function Home() {
                 {/* Text */}
                 <div className="sm:col-span-3 p-6 sm:p-8 flex flex-col justify-between">
                   <div>
-                    <h3 className="text-xl sm:text-2xl font-bold text-slate-900 mb-3">
+                    <h3 className="text-lg sm:text-xl lg:text-[22px] font-bold text-slate-900 mb-3 tracking-tight">
                       {facilityTabs[activeTab].title}
                     </h3>
                     <p className="text-slate-500 text-sm sm:text-base leading-relaxed">
@@ -363,8 +359,7 @@ export default function Home() {
                 {aboutData.eyebrow}
               </div>
               <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-slate-900 leading-snug">
-                <span className="text-teal-500">Health Insurance</span> and<br />
-                Billing Information
+                A dedicated <span className="text-teal-500">super-speciality centre</span> for digestive health and fetal medicine services
               </h2>
               <p className="text-slate-500 text-base leading-relaxed">
                 {aboutData.bodyCopy}
@@ -473,7 +468,7 @@ export default function Home() {
               Meet Our <span className="text-teal-500">Doctors</span>
             </h2>
             <p className="text-slate-500 text-base max-w-xl mx-auto">
-              Experienced. Compassionate. Dedicated to Your Digestive & Maternal Health.
+              Experienced. Compassionate. Dedicated
             </p>
           </motion.div>
 
@@ -497,11 +492,10 @@ export default function Home() {
                 </div>
                 <div className="p-6">
                   {/* Badge */}
-                  <span className={`inline-block px-3 py-1 rounded-full text-xs font-bold mb-3 ${
-                    doctor.accent === 'teal'
-                      ? 'bg-teal-100 text-teal-700'
-                      : 'bg-rose-100 text-rose-700'
-                  }`}>
+                  <span className={`inline-block px-3 py-1 rounded-full text-xs font-bold mb-3 ${doctor.accent === 'teal'
+                    ? 'bg-teal-100 text-teal-700'
+                    : 'bg-rose-100 text-rose-700'
+                    }`}>
                     {doctor.accent === 'teal' ? 'Gastroenterology Lead' : 'Fetal Medicine Lead'}
                   </span>
                   <h3 className="text-xl font-bold text-slate-900 mb-1 group-hover:text-teal-600 transition-colors">

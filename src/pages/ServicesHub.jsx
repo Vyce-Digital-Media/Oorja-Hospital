@@ -87,7 +87,7 @@ export default function ServicesHub() {
                   Fetal Medicine & HD Scans
                 </h2>
                 <p className="text-slate-500 text-sm leading-relaxed mb-5">
-                  Advanced 3D/4D ultrasonography, multiple pregnancy management, fetal echocardiography, and high-risk maternal-fetal counseling.
+                  Advanced 3D/4D ultrasonography, multiple pregnancy management, fetal echocardiography, and high-risk maternal-fetal counselling.
                 </p>
                 <ul className="space-y-2 mb-6">
                   {fetalServicesData.services.slice(0, 4).map((s) => (

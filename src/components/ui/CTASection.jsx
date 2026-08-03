@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import { globalData } from '../../data/content';
 
 export default function CTASection({
-  title = "Ready to Prioritise Your Digestive & Maternal Health?",
+  title = "Ready to Prioritise Your Digestive & Fetal Health?",
   subtitle = "Schedule a consultation with our AIIMS-trained specialists today. Fast, confidential booking directly via our Contact page or WhatsApp.",
   isLight = true,
 }) {

@@ -21,10 +21,10 @@ export default function About() {
               <span className="w-1.5 h-1.5 rounded-full bg-teal-500 animate-pulse inline-block" />
               {aboutData.eyebrow}
             </div>
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-slate-900 tracking-tight leading-normal mb-6 mx-auto line-clamp-2">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-slate-900 tracking-tight leading-normal mb-6 mx-auto">
               {aboutData.heading}
             </h1>
-            <p className="text-lg sm:text-xl text-slate-600 leading-relaxed max-w-5xl mx-auto line-clamp-2">
+            <p className="text-lg sm:text-xl text-slate-600 leading-relaxed max-w-5xl mx-auto">
               {aboutData.bodyCopy}
             </p>
           </div>

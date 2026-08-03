@@ -40,7 +40,7 @@ export default function Team() {
               Our Specialists
             </h2>
             <p className="text-teal-100 text-base max-w-xl mx-auto">
-              Experienced. Compassionate. Dedicated to Your Digestive & Maternal Health.
+              Experienced. Compassionate. Dedicated to Your Digestive & Fetal Health.
             </p>
           </div>
 

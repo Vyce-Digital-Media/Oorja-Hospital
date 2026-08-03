@@ -22,7 +22,7 @@ export default function FetalMedicine() {
               {fetalServicesData.title}
             </h1>
             <p className="text-lg sm:text-xl text-slate-600 leading-relaxed">
-              High-definition 3D/4D pregnancy ultrasonography, multiple pregnancy monitoring, fetal echocardiography, and high-risk maternal counseling.
+              High-definition 3D/4D pregnancy ultrasonography, multiple pregnancy monitoring, fetal echocardiography, and high-risk maternal Counselling.
             </p>
             {/* Doctor Lead Badge */}
             <div className="mt-8 inline-flex items-center gap-3 p-4 rounded-2xl bg-white border border-rose-100 shadow-md">
@@ -50,13 +50,13 @@ export default function FetalMedicine() {
                   Advanced Prenatal & Maternal Care
                 </h2>
                 <p className="text-slate-500 text-sm leading-relaxed">
-                  Our state-of-the-art ultrasound machine delivers high-definition fetal sonography, helping monitor neurological and structural development with calm precision.
+                  Our state-of-the-art ultrasound machine delivers high-definition fetal sonography, helping monitor baby's development with precision.
                 </p>
               </div>
 
               {/* Checklist */}
               <div className="space-y-2.5 pt-2 border-t border-slate-100">
-                {['3D/4D Real-life Womb Imaging', 'Twin & Triplet Pregnancy Care', 'Fetal Echocardiography & Heart Scans', 'FMF-UK Certified Standards'].map((item) => (
+                {['3D/4D Real-life Womb Imaging', 'Twin & Triplet Pregnancy Care', 'Fetal Echocardiography & Brain Scans', 'FMF-UK Certified Standards'].map((item) => (
                   <div key={item} className="flex items-center gap-2.5 text-sm font-medium text-slate-700">
                     <CheckCircle2 className="w-4 h-4 text-rose-500 flex-shrink-0" />
                     <span>{item}</span>
@@ -68,7 +68,7 @@ export default function FetalMedicine() {
               <div className="bg-rose-50 border border-rose-100 p-6 rounded-2xl space-y-3">
                 <h4 className="font-bold text-slate-900 text-base">Schedule Your Fetal Scan</h4>
                 <p className="text-xs text-slate-500 leading-relaxed">
-                  Book your pregnancy scan or high-risk maternal counseling consultation directly via WhatsApp.
+                  Book your pregnancy scan or high-risk maternal Counselling consultation directly via WhatsApp.
                 </p>
                 <a
                   href={globalData.contact.whatsappUrl}
