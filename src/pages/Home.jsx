@@ -5,7 +5,7 @@ import {
   ArrowRight, ShieldCheck, Phone, MessageSquare,
   Ambulance, Building2, Stethoscope, CheckCircle2,
   Star, ChevronRight, Award, Cpu, UserCheck, FileText, HeartPulse, Smile,
-  Activity
+  Activity, MapPin
 } from 'lucide-react';
 import * as LucideIcons from 'lucide-react';
 import {
@@ -125,10 +125,12 @@ export default function Home() {
                   <span>Book Appointment</span>
                 </a>
                 <a
-                  href={`tel:${globalData.contact.phone.replace(/[^0-9+]/g, '')}`}
+                  href="https://share.google/sgFcY6Cyi3Aaf2Bdp"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 border border-slate-300 bg-white hover:border-teal-400 text-slate-700 hover:text-teal-600 font-semibold px-6 py-3.5 rounded-xl shadow-sm transition-all duration-200"
                 >
-                  <Phone className="w-4 h-4" />
+                  <MapPin className="w-4 h-4" />
                   <span>Find Doctor</span>
                 </a>
               </motion.div>

@@ -335,5 +335,5 @@ export const footerData = {
     "Fetal Neurosonography",
   ],
   copyright: "© Oorja Gastro-Liver and Fetal Medicine Centre, All right reserved.",
-  credit: "Designed By EchoZest Solutions",
+  credit: "Designed By Vyce Digital Media",
 };

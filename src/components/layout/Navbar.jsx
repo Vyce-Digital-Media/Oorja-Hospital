@@ -79,12 +79,12 @@ export default function Navbar() {
                         animate={{ opacity: 1, y: 0 }}
                         exit={{ opacity: 0, y: 8 }}
                         transition={{ duration: 0.18 }}
-                        className="absolute top-full left-0 w-56 pt-2 z-50"
+                        className="absolute top-full left-0 w-max min-w-[250px] pt-2 z-50"
                       >
                         <div className="bg-white rounded-xl shadow-xl border border-slate-100 overflow-hidden p-1.5">
                           <Link
                             to="/services"
-                            className="block px-3 py-2 text-xs font-semibold uppercase tracking-wider text-teal-600 hover:bg-teal-50 rounded-lg transition-colors"
+                            className="block px-3 py-2 text-xs font-semibold text-teal-600 hover:bg-teal-50 rounded-lg transition-colors whitespace-nowrap"
                           >
                             All Services
                           </Link>
@@ -99,8 +99,8 @@ export default function Navbar() {
                                   : 'text-slate-700 hover:bg-teal-50 hover:text-teal-600'
                               }`}
                             >
-                              <div className="font-medium">{subItem.name}</div>
-                              <div className="text-[11px] text-slate-400 mt-0.5">
+                              <div className="font-medium whitespace-nowrap">{subItem.name}</div>
+                              <div className="text-[11px] text-slate-400 mt-0.5 whitespace-nowrap">
                                 {subItem.subtext}
                               </div>
                             </Link>

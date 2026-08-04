@@ -112,71 +112,46 @@ export default function ContactContent({ showHeader = true }) {
                   </li>
                 </ul>
               </div>
-
-              {/* Map */}
-              <div className="space-y-3 pt-4 border-t border-slate-100">
-                <div className="flex items-center justify-between">
-                  <h4 className="text-sm font-bold text-slate-900 uppercase tracking-wider">Location Map</h4>
-                  <a href={globalData.contact.mapUrl} target="_blank" rel="noopener noreferrer"
-                    className="text-xs text-teal-500 font-semibold hover:underline">
-                    Open in Google Maps →
-                  </a>
-                </div>
-                <div className="rounded-2xl overflow-hidden border border-slate-100 shadow-md aspect-[16/10] w-full">
-                  <iframe
-                    src={globalData.contact.mapEmbedUrl}
-                    width="100%" height="100%"
-                    style={{ border: 0 }}
-                    allowFullScreen=""
-                    loading="lazy"
-                    referrerPolicy="no-referrer-when-downgrade"
-                    title="Oorja Hospital Location Map"
-                    className="w-full h-full"
-                  />
-                </div>
-              </div>
             </div>
 
+
             {/* Right: Appointment Form */}
-            <div className="lg:col-span-6 bg-teal-50 border border-teal-100 rounded-3xl p-8 sm:p-10 shadow-sm">
-              <div className="space-y-6">
+            <div className="lg:col-span-6 bg-teal-50 border border-teal-100 rounded-3xl p-6 sm:p-8 shadow-sm lg:-mt-12">
+              <div className="space-y-5">
                 <div>
-                  <span className="text-xs font-bold uppercase tracking-widest text-teal-500 block mb-2">Quick Booking</span>
-                  <h3 className="text-2xl sm:text-3xl font-bold text-slate-900 mb-2">
+                  <span className="text-[10px] font-bold uppercase tracking-widest text-teal-500 block mb-1.5">Quick Booking</span>
+                  <h3 className="text-xl sm:text-2xl font-bold text-slate-900 mb-1.5">
                     Request an Appointment
                   </h3>
-                  <p className="text-slate-500 text-sm leading-relaxed">
-                    Fill out your details below. We'll redirect you to our clinic WhatsApp with a pre-filled request to confirm your booking.
-                  </p>
                 </div>
 
-                <form onSubmit={handleWhatsAppSubmit} className="space-y-4">
+                <form onSubmit={handleWhatsAppSubmit} className="space-y-3.5">
                   <div>
-                    <label className="block text-xs font-bold uppercase tracking-wider text-slate-600 mb-1.5">
+                    <label className="block text-[10px] font-bold uppercase tracking-wider text-slate-600 mb-1">
                       Patient Full Name *
                     </label>
                     <input type="text" name="name" required value={formData.name} onChange={handleChange}
                       placeholder="Enter patient name"
-                      className="w-full px-4 py-3 rounded-xl bg-white border border-slate-200 focus:outline-none focus:ring-2 focus:ring-teal-400 focus:border-transparent text-slate-900 text-sm shadow-sm transition-all placeholder:text-slate-400"
+                      className="w-full px-3.5 py-2.5 rounded-xl bg-white border border-slate-200 focus:outline-none focus:ring-2 focus:ring-teal-400 focus:border-transparent text-slate-900 text-xs shadow-sm transition-all placeholder:text-slate-400"
                     />
                   </div>
 
                   <div>
-                    <label className="block text-xs font-bold uppercase tracking-wider text-slate-600 mb-1.5">
+                    <label className="block text-[10px] font-bold uppercase tracking-wider text-slate-600 mb-1">
                       Phone Number (WhatsApp Preferred) *
                     </label>
                     <input type="tel" name="phone" required value={formData.phone} onChange={handleChange}
                       placeholder="+91 XXXXX XXXXX"
-                      className="w-full px-4 py-3 rounded-xl bg-white border border-slate-200 focus:outline-none focus:ring-2 focus:ring-teal-400 focus:border-transparent text-slate-900 text-sm shadow-sm transition-all placeholder:text-slate-400"
+                      className="w-full px-3.5 py-2.5 rounded-xl bg-white border border-slate-200 focus:outline-none focus:ring-2 focus:ring-teal-400 focus:border-transparent text-slate-900 text-xs shadow-sm transition-all placeholder:text-slate-400"
                     />
                   </div>
 
                   <div>
-                    <label className="block text-xs font-bold uppercase tracking-wider text-slate-600 mb-1.5">
+                    <label className="block text-[10px] font-bold uppercase tracking-wider text-slate-600 mb-1">
                       Select Department / Service *
                     </label>
                     <select name="service" value={formData.service} onChange={handleChange}
-                      className="w-full px-4 py-3 rounded-xl bg-white border border-slate-200 focus:outline-none focus:ring-2 focus:ring-teal-400 focus:border-transparent text-slate-900 text-sm shadow-sm cursor-pointer"
+                      className="w-full px-3.5 py-2.5 rounded-xl bg-white border border-slate-200 focus:outline-none focus:ring-2 focus:ring-teal-400 focus:border-transparent text-slate-900 text-xs shadow-sm cursor-pointer"
                     >
                       <optgroup label="Gastroenterology & Liver">
                         <option value="Digestive Issues Care">Digestive Issues Consultation</option>
@@ -199,31 +174,49 @@ export default function ContactContent({ showHeader = true }) {
                   </div>
 
                   <div>
-                    <label className="block text-xs font-bold uppercase tracking-wider text-slate-600 mb-1.5">
+                    <label className="block text-[10px] font-bold uppercase tracking-wider text-slate-600 mb-1">
                       Additional Notes / Preferred Date & Time (Optional)
                     </label>
-                    <textarea name="message" rows={3} value={formData.message} onChange={handleChange}
+                    <textarea name="message" rows={2} value={formData.message} onChange={handleChange}
                       placeholder="Briefly describe your symptoms or preferred consultation time..."
-                      className="w-full px-4 py-3 rounded-xl bg-white border border-slate-200 focus:outline-none focus:ring-2 focus:ring-teal-400 focus:border-transparent text-slate-900 text-sm shadow-sm transition-all resize-none placeholder:text-slate-400"
+                      className="w-full px-3.5 py-2.5 rounded-xl bg-white border border-slate-200 focus:outline-none focus:ring-2 focus:ring-teal-400 focus:border-transparent text-slate-900 text-xs shadow-sm transition-all resize-none placeholder:text-slate-400"
                     />
                   </div>
 
                   <div className="pt-1">
                     <button type="submit"
-                      className="w-full bg-teal-500 hover:bg-teal-600 text-white font-bold text-sm py-4 px-6 rounded-xl transition-all duration-200 shadow-md hover:shadow-teal-200 flex items-center justify-center gap-2 cursor-pointer group"
+                      className="w-full bg-teal-500 hover:bg-teal-600 text-white font-bold text-xs py-3.5 px-5 rounded-xl transition-all duration-200 shadow-md hover:shadow-teal-200 flex items-center justify-center gap-2 cursor-pointer group"
                     >
-                      <MessageSquare className="w-4 h-4 group-hover:scale-110 transition-transform" />
+                      <MessageSquare className="w-3.5 h-3.5 group-hover:scale-110 transition-transform" />
                       <span>Send Appointment Request via WhatsApp</span>
-                      <Send className="w-3.5 h-3.5 ml-1 opacity-70" />
+                      <Send className="w-3 h-3 ml-1 opacity-70" />
                     </button>
                   </div>
                 </form>
-
-                <div className="pt-4 border-t border-teal-100 flex items-center justify-center gap-2 text-xs text-slate-500 text-center">
-                  <CheckCircle2 className="w-4 h-4 text-teal-500 flex-shrink-0" />
-                  <span>Direct connection with clinic reception desk. Fast response guaranteed.</span>
-                </div>
               </div>
+            </div>
+          </div>
+
+          {/* Map */}
+          <div className="mt-12 lg:mt-16 space-y-4 pt-8 border-t border-slate-100">
+            <div className="flex items-center justify-between">
+              <h4 className="text-sm font-bold text-slate-900 uppercase tracking-wider">Location Map</h4>
+              <a href={globalData.contact.mapUrl} target="_blank" rel="noopener noreferrer"
+                className="text-xs text-teal-500 font-semibold hover:underline">
+                Open in Google Maps →
+              </a>
+            </div>
+            <div className="rounded-3xl overflow-hidden border border-slate-100 shadow-md w-full h-[300px] sm:h-[400px] lg:h-[500px]">
+              <iframe
+                src={globalData.contact.mapEmbedUrl}
+                width="100%" height="100%"
+                style={{ border: 0 }}
+                allowFullScreen=""
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Oorja Hospital Location Map"
+                className="w-full h-full"
+              />
             </div>
           </div>
         </div>
