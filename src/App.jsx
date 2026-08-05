@@ -16,6 +16,7 @@ import FetalMedicine from './pages/FetalMedicine';
 import Team from './pages/Team';
 import Blog from './pages/Blog';
 import Testimonials from './pages/Testimonials';
+import Gallery from './pages/Gallery';
 import Contact from './pages/Contact';
 
 export default function App() {
@@ -39,6 +40,7 @@ export default function App() {
               <Route path="/blog" element={<PageTransition><Blog /></PageTransition>} />
               <Route path="/why-oorja" element={<Navigate to="/about" replace />} />
               <Route path="/testimonials" element={<PageTransition><Testimonials /></PageTransition>} />
+              <Route path="/gallery" element={<PageTransition><Gallery /></PageTransition>} />
               <Route path="/contact" element={<PageTransition><Contact /></PageTransition>} />
             </Routes>
           </AnimatePresence>

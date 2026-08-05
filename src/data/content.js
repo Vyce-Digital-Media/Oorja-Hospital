@@ -44,6 +44,7 @@ export const navLinks = [
   { name: "Our Team", path: "/team" },
   { name: "Blog", path: "/blog" },
   { name: "Testimonials", path: "/testimonials" },
+  { name: "Gallery", path: "/gallery" },
 ];
 
 export const homeData = {

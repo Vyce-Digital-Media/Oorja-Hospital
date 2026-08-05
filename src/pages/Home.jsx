@@ -596,6 +596,50 @@ export default function Home() {
       </section>
 
       {/* ═══════════════════════════════════════════════════════════
+          8.5. SMALL GALLERY SECTION
+      ═══════════════════════════════════════════════════════════ */}
+      <section className="py-16 sm:py-24 bg-slate-50 overflow-hidden">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-10">
+          <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-6">
+            <div>
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-slate-900 mb-3 tracking-tight">
+                Our Facilities
+              </h2>
+              <p className="text-slate-600 text-base max-w-xl">
+                Take a glimpse into our modern, state-of-the-art medical centre designed for your absolute comfort.
+              </p>
+            </div>
+            <Link
+              to="/gallery"
+              className="inline-flex items-center gap-2 text-teal-600 font-semibold hover:text-teal-700 transition-colors shrink-0 bg-teal-50 px-5 py-2.5 rounded-full"
+            >
+              View Full Gallery <ArrowRight className="w-4 h-4" />
+            </Link>
+          </div>
+        </div>
+        
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            {[
+              { src: '/gallery-exterior.png', alt: 'Hospital Exterior' },
+              { src: '/gallery-endoscopy.png', alt: 'Endoscopy Suite' },
+              { src: '/gallery-waiting.png', alt: 'Waiting Room' },
+              { src: '/gallery-ultrasound.png', alt: 'Ultrasound Room' },
+            ].map((img, idx) => (
+              <Link to="/gallery" key={idx} className="group overflow-hidden rounded-2xl aspect-square shadow-sm block relative cursor-pointer">
+                <img 
+                  src={img.src} 
+                  alt={img.alt}
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" 
+                />
+                <div className="absolute inset-0 bg-navy/0 group-hover:bg-navy/10 transition-colors duration-300" />
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ═══════════════════════════════════════════════════════════
           9. CTA SECTION — WHITE
       ═══════════════════════════════════════════════════════════ */}
       <CTASection isLight={true} />
